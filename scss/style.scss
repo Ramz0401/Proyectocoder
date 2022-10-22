@@ -38,23 +38,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &_nav ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
   }
-  .main__header_nav ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 15px;
-  }
-  .main__header ul li {
+  .main__header ul li{
     list-style: none;
     padding-left: 10px;
-  }
-  .main__header a {
-    color: #ffffff;
-  }
-  .main__index_contenedor {
-    padding: 15px;
-  }
+    &a{
+        color: #ffffff;
+    }
+}
   .main__index {
     background-color: #deac7c;
     height: auto;
@@ -62,32 +59,35 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
-  }
-  .main__index_buttoms {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .main__index_buttoms div {
-    display: flex;
-    padding: 10px;
-  }
-  .main__index_buttoms a {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 200;
-    background-color: #ffb48f;
-    border: 1px solid #fff;
-    border-radius: 45px;
-    width: 70px;
-    padding: 10px;
-    margin: 5px;
-  }
-  .main__index_buttoms img {
-    width: 55px;
-    height: 55px;
+    &_contenedor{
+        padding: 15px;
+    }
+    &_buttoms{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &div{
+            display: flex;
+            padding: 10px;
+        }
+        &a{
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-size: 15px;
+            font-weight: 200;
+            background-color: #ffb48f;
+            border: 1px solid #fff;
+            border-radius: 45px;
+            width: 70px;
+            padding: 10px;
+            margin: 5px;
+        }
+        &img{
+            width: 55px;
+            height: 55px;
+        }
+    }
   }
   .main_index_title {
     font-family: "Open Sans", sans-serif;
@@ -97,13 +97,13 @@
     /* 20rem= 20*16px */
     line-height: 1.6;
     text-align: center;
-  }
-  .main_index_title_desc {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-size: 25px;
-    font-weight: 200;
-    padding-left: 10px;
+    &_desc{
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-size: 25px;
+        font-weight: 200;
+        padding-left: 10px;
+    }
   }
   .contenido__destacado {
     text-align: center;
@@ -116,47 +116,47 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-  }
-  .contenido__destacado_contenedor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    width: 90%;
-    padding-bottom: 10px;
-    padding-left: 20px;
-  }
-  .contenido__destacado h2 {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    font-weight: 200;
-    text-align: center;
-  }
-  .contenido__destacado--imagendest1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .contenido__destacado--imagendest1 img {
-    padding: 0px;
-    margin-top: 10px;
-    border: 1px solid #fff;
-    width: 60%;
-  }
-  .contenido__destacado--imagendest2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .contenido__destacado--imagendest2 img {
-    padding: 0%;
-    margin-top: 10px;
-    border: 1px solid #fff;
-    width: 60%;
-  }
+    &_contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 90%;
+        padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    &h2{
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-size: 2rem;
+        font-weight: 200;
+        text-align: center;
+    }
+    &--imagendest1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        &img{
+            padding: 0px;
+            margin-top: 10px;
+            border: 1px solid #fff;
+            width: 60%;
+        }
+    }
+    &--imagendest2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        &img{
+            padding: 0%;
+            margin-top: 10px;
+            border: 1px solid #fff;
+            width: 60%;
+        }
+    }
+}
   .footer {
     background-color: #3b2509;
     font-family: "Open Sans", sans-serif;
@@ -165,20 +165,20 @@
     font-weight: 700;
     display: flex;
     align-items: center;
-  }
-  footer p {
-    padding-left: 50px;
-    position: relative;
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-size: 1rem;
-    font-weight: 200;
-    display: flex;
-  }
-  .footer_redes p {
-    text-align: justify;
-    padding-top: 10px;
+    &p{
+        padding-left: 50px;
+        position: relative;
+        color: #ffffff;
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 200;
+        display: flex;
+    }
+    &_redes p{
+        text-align: justify;
+        padding-top: 10px;
+    }
   }
   /*PESTAÑA CONTACTO*/
   .message {
@@ -190,24 +190,24 @@
     font-weight: 200;
     margin: 20px;
     padding: 5px;
-  }
-  .message h1 {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .message form input {
-    margin-top: 10px;
-  }
-  .message form textarea {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-size: 1rem;
-    font-weight: 200;
-    margin-top: 10px;
-    text-align: center;
-  }
+    &h1{
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    &form input{
+        margin-top: 10px;
+    }
+    &form textarea{
+        font-family: "Open Sans", sans-serif;
+        font-style: normal;
+        font-size: 1rem;
+        font-weight: 200;
+        margin-top: 10px;
+        text-align: center;
+    }
+}
   .contacto {
     background-color: #deac7c;
     font-family: "Open Sans", sans-serif;
@@ -228,9 +228,9 @@
     font-weight: 200;
     display: flex;
     flex-direction: column;
-  }
-  .section_mapa_mapaimg {
-    width: 100%;
+    &_mapaimg{
+        width: 100%;
+    }
   }
   .ubicacion{
     background-color: #deac7c;
@@ -259,28 +259,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .contenidos img {
-    padding-top: 10px;
-    width: 80%;
-  }
-  .contenidos a {
-    background-color: #ffb48f;
-    border: 1px solid #fff;
-    border-radius: 45px;
-    width: 100px;
-    padding: 15px;
-    position: relative;
-  }
-  .contenidos p {
-    border-radius: 15px;
-  }
+    &img{
+        padding-top: 10px;
+        width: 80%;
+      }
+      &a{
+        background-color: #ffb48f;
+        border: 1px solid #fff;
+        border-radius: 45px;
+        width: 100px;
+        padding: 15px;
+        position: relative;
+      }
+      &p{
+        border-radius: 15px;
+      }
+    }
   /* INICIO PESTAÑA SEGUIMIENTO */
-  .seguimiento h1{
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
   .seguimiento{
     font-family: "Open Sans", sans-serif;
     font-style: normal;
@@ -292,19 +287,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .seguimiento_img{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .seguimiento_img img{
-    width: 40%;
-  }
+    &h1{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &_img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &img{
+            width: 40%;
+        }
+    }
+}
   /* FIN PESTAÑA SEGUIMIENTO */
   
-  /* FIN VER TODO */
   @media (min-width: 768px) {
     .main__header {
       flex-direction: row;
@@ -341,6 +340,7 @@
       justify-items: center;
       height: 350px;
     }
+    /* FIN PESTAÑA VER TODO */
     /* INICIO PESTAÑA CONTACTO */
   
     .main_contacto {
